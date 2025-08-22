@@ -1,0 +1,1 @@
+var bdmap_key_def = '6TXcEQtGRcwWktjNDKTldYT98cYDq6ZF';var bdmap_key_user = 'sByibQsfCSIWkrLXMesgwQb3WILr7wbZ';

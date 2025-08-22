@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+input,textarea {
+    border: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none; 
+    outline: none;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+    font: 14px/22px "Microsoft YaHei";
+    color: #666; 
+    font-size: 13px;
+}
+
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+h4, h5, h6 {font-size: 100%;}
+* h1,* h2,* h3,* h4,* h5,* h6{margin: 0px;} /*覆盖bootstrape对标题加的默认外边距*/
+
+address, cite, dfn, em, i, var {font-style: normal;} /* 斜体扶正 */
+
+/* 重置列表元素 */
+ul, ol ,li{list-style: none;}
+
+/* 重置文本格式元素 */
+a {
+    text-decoration: none; 
+    color: #666;
+    word-wrap:break-word;
+}/*英文换行*/
+a:hover {text-decoration: none; }
+
+
+/* 重置表单元素 */
+legend {color: #000;} /* for ie6 */
+fieldset, img {border: none;} /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+body {overflow-y: scroll;}
+
+/*设置浮动*/
+.fl,.pull-left {float: left;}
+.fr,.pull-right {float: right;}
+.pr{position: relative;}
+.pa{position: absolute;}
+
+.clear{ 
+    clear:both; 
+    height: 0; 
+    overflow: hidden;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.box,.content,.w1200,.width-1200{ width:1200px; margin:0 auto;}
+/* -- 内页布局 -- */
+.page_bg { padding:20px 0 20px; background:#fff;}
+.page_main { margin: 0 auto; width: 1200px;}  /*版面宽度*/
+.page_content{ width:930px;} /*右边宽度*/
+.page_left{ width:240px;} /*左边宽度*/
+.page_full{ width:100%;}
+.dis,.hide{ display:none;}
+
+.line-clamp-1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.line-clamp-2{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.line-clamp-3{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
